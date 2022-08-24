@@ -1,0 +1,82 @@
+<html>
+<head>
+   <title>movie</title>
+   <script type="text/Javascript">
+   function sample()
+   {
+             var ticket=window.prompt("enter the name:");
+var num=window.prompt("enter the num of tickets:");
+ var tp=0;
+  var cm=0;
+if(num>0)
+{
+  if(num<=2)
+   {
+   tp=num*150;
+cm=tp;
+}
+else if(num<=5)
+{
+tp=num*150;
+
+   var disc=tp*0.1;
+   var cm=tp-disc;
+}
+else
+{
+ window.alert("booking not allowed");
+}
+}
+            else
+  {
+               window.alert("book atleast one ticket");
+               }  
+
+document.f.mn.value=ticket;
+document.f.s.value=num;
+document.f.l.value=tp;
+document.f.r.value=disc;
+document.f.t.value=cm;
+ 
+}
+
+   </script>
+</head>
+<body bgcolor="lightpink" onload="sample()">
+  <form name="f">
+  <table border="5" align="center">
+                              <tr>
+                  <th colspan="2">movie ticket details</th>
+  </tr>
+                               <tr>
+     <th>moviename</th>
+  <td><input type="text" name="mn" id="mn" disabled/></td>
+  </tr>
+   
+ 
+                 
+  <tr>
+     <th>Num of ticket</th>
+  <td><input type="text" name="s" id="s"/></td>
+  </tr>
+     <tr>
+     <th>calculated prize</th>
+  <td><input type="text" name="l" id="l"/></td>
+  </tr>
+                                  <tr>
+     <th>After Discount</th>
+  <td><input type="text" name="r" id="r"/></td>cv   ccb
+  </tr>
+ 
+  <th>Total Prize</th>
+  <td><input type="text" name="t" id="t"/></td>
+  </tr>
+                                 <tr ><td><input type="button" name="sb" value="GetData" onClick="sample()"/></td>
+<td><input type="reset" name="rb"></td></tr>  
+   
+  </table>
+ 
+  </form>
+ 
+</body>
+</html>

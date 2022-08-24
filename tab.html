@@ -1,0 +1,108 @@
+<html>
+<head><center><h1>Movie ticket's Booking</h1></center>
+
+<script type="text/javascript">
+function movie()
+{
+window.alert("bookinf movie thickets");
+
+var n;
+
+for(var i=0;i<3;i++)
+{
+
+var n=window.prompt("enter the how many tickets u want");
+var amount=0;
+var discount=0;
+var res=0;
+
+if(n>=2 &&n<6)
+{
+
+ amount=n*150;
+
+discount=(amount*(10/100));
+
+ res=amount-discount;
+
+}
+
+if(n<=2)
+{
+
+ amount=n*150;
+
+}
+if(n>6 || n==6)
+{
+window.alert("booking is not allowed");
+}
+
+document.write('<center><form >');
+document.write('<table border=1 >');
+document.write('<tr>');
+document.write('<td>no.of tickets :</td>');
+document.write('<td>');
+document.write(n);
+document.write('</td>');
+document.write('</tr>');
+document.write('<tr>');
+document.write('<td>amount without discount:</td>');
+document.write('<td>');
+document.write(amount);
+document.write('</td>');
+document.write('</tr>');
+document.write('<tr>');
+document.write('<td>10% discount:</td>');
+document.write('<td>');
+document.write(discount);
+document.write('</td>');
+document.write('</tr>');
+document.write('<tr>');
+document.write('<td>total amount :</td>');
+document.write('<td>');
+document.write(res);
+document.write('</td>');
+document.write('</tr>');
+document.write('<tr>');
+document.write('<td><input type="button" value="redata" onclick="movie()"></td>');
+document.write('<td><input type="reset" onclick="movie()"></td>');
+document.write('</tr>');
+document.write('</table>');
+document.write('</table>');
+document.write('</form></center>');
+
+}
+}
+</script>
+<body bgcolor="skyblue">
+
+<center><form >
+<table border=1 bgcolor="green">
+<tr>
+<td>no.of tickets :</td>
+<td><input type="text" name="ticket" id="ticket" disabled></td>
+</tr>
+<tr>
+<td>amount without discount:</td>
+
+<td><input type="text" name="amount" id="amount" disabled></td>
+</tr>
+<tr>
+<td>10% discount:</td>
+<td><input type="text" name="dis" id="dis" disabled></td>
+</tr>
+<tr>
+<td>total amount :</td>
+<td><input type="text" name="total" id="total" disabled></td>
+</tr>
+<tr><td><input type="button" value="redata" onclick="movie()"></td>
+<td><input type="reset" onclick="movie()"></td></tr>
+</table>
+</form></center>
+
+</body>
+</head>
+</html>
+
+

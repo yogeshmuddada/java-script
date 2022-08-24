@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+function ufun()
+{
+var name=new RegExp("^[A-Z][a-z0-9]+$");
+var a=new RegExp("^[a-z0-9]+");
+var b=new RegExp("[0-9]{10}$");
+var c=new RegExp("^[a-z]+@[a-z]+.com");
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+var z=document.getElementById("t3").value;
+var d=document.getElementById("t4").value;
+if(x.match(name))
+	if(y.match(a))
+		if(z.match(b))
+			if(d.match(c))
+			{
+			window.alert("all are valid");
+			}
+			else{
+			window.alert("email is not valid");}
+		else
+		{
+		window.alert("phoneNO is not valid");
+		}
+	else{
+	window.alert("password is not valid");}
+else{
+window.alert("username is not valid")}
+}
+</script>
+</head>
+<body>
+username:<input type="text" id="t1"><br>
+password:<input type="text" id="t2"><br>
+phoneNO:<input type="text" id="t3"><br>
+email:  <input type="text" id="t4"><br>
+<button onclick="ufun()">submit</button>
+</body>
+</html>
+

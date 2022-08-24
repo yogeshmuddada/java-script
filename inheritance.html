@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+	class Person
+	{
+	constructor(name,age)
+	{
+	this.name=name;
+	this.age=age;
+	}
+			getDetails1()
+		{
+		document.write("Employee Details");
+		document.write("Employee name"+this.name+"age"+this.age);
+		}
+	}
+	class Employee extends Person
+	{
+		constructor(name,age,role,contact)
+		{
+			super(name,age)
+			this.role=role;
+			this.contact=contact;
+		}
+		getDetails()
+		{
+		document.write("role"+this.role+"contact"+this.contact);
+		}
+	}
+	var ob=new Employee("yogi","20","sde","2467880");
+		ob.getDetails1();
+		ob.getDetails();
+</script>
+</head>
+</html>

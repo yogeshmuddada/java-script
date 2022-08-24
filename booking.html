@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+var s=parseInt(window.prompt("enter the number of seats:"));
+cost=9;
+function calculateCost(s)
+{
+	if(s>=6)
+		document.write("booking is not allowed");
+	else if(s==1)
+		alert("Total cost "+cost);
+	else if(s==2)
+		alert("Total cost with Discount "+(18-(9*0.12)));
+	else if(s==3)
+		alert("Total cost with Discount "+(27-(9*0.21)));
+	else if(s==4)
+		alert("Total cost with Discount "+(36-(9*0.32)));
+	else if(s==5)
+		alert("Total cost with Discount "+(45-(9*.45)));
+}
+document.write("Total Booked "+s);
+document.write("<br>Total cost "+s*9);
+</script>
+</head>
+<body>
+<br>
+<input type="button" value="Apply" onclick="calculateCost(s)">
+</body>
+</html>

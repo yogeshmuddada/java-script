@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+	var a=parseInt(window.prompt("enter the a value"));
+	var b=parseInt(window.prompt("enter the b value"));
+	function fun(a,b)
+	{
+	document.writeln(a+b);
+	}
+	var sub=function(a,b)
+	{
+	document.writeln(a-b);
+	}
+	var mult=(a,b)=>document.writeln(a*b);
+	fun(a,b);
+	sub(a,b);
+	mult(a,b);
+	var big=(a,b)=>{
+	if(a>b)
+		document.writeln("a is big");
+	else
+	 document.writeln("b is big:");
+	 }
+	 big(a,b);
+</script>
+</head>
+<body>
+</body>
+</html>

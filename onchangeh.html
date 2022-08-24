@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+    function myfun()
+	{
+	var x=document.getElementById("s").value;
+	document.getElementById("c").innerHTML=x;
+	}
+</script>
+</head>
+<body>
+<p>select a new car from the list</p>
+<select id="s" onchange="myfun()">
+<option>Audi</option>
+<option>BMW</option>
+<option>Mercedes</option>
+<option>volvo</option>
+</select>
+<p id="c"> </p>
+</body>
+</html>
