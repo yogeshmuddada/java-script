@@ -1,0 +1,20 @@
+<html>
+<script>
+var c=0;
+function ran()
+{
+document.getElementById("p1").innerHTML=Math.floor(Math.random()*100);
+c++;
+if(c==5)
+{
+clearInterval(x);
+}
+}
+var x=setInterval(ran,3000);
+
+</script>
+<body>
+random number is
+<p id="p1"></p>
+</body>
+</html>
