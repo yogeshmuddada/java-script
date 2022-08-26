@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script>
+        function eat()
+		{
+		var x=document.getElementById("p1").innerHTML;
+		if(x=="Click here to eat")
+		{
+		document.getElementById("img1").src="empty.jpg";
+		document.getElementById("h").innerHTML="Hope you like it";
+		document.getElementById("p1").innerHTML="click to Refill it";
+		}
+		else
+		{
+		document.getElementById("img1").src="full.jpg";
+		document.getElementById("h").innerHTML="cone is refilled";
+		document.getElementById("p1").innerHTML="Enjoy it";
+		}
+		}
+    </script>
+</head>
+<body style="background-color:lightblue;text-align:center">
+    <h1 id="h">Here's your ice cream</h1>
+    <img id="img1" src="full.jpg" alt="Ice cream is not ready">
+    <p id="p1" onclick="eat()">Click here to eat</p>
+	
+</body>
+</html>
